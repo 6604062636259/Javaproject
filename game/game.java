@@ -341,7 +341,7 @@ public class game extends JPanel implements ActionListener, KeyListener {
                 restartGame();  // เริ่มเกมใหม่เมื่อกด R
             } else if (e.getKeyCode() == KeyEvent.VK_ENTER) {
                 // เมื่อเกมจบหรือชนะ ให้กลับไปที่ล็อบบี้
-                GameWithLobby mainFrame = (GameWithLobby) SwingUtilities.getWindowAncestor(this);
+                Lobby mainFrame = (Lobby) SwingUtilities.getWindowAncestor(this);
                 mainFrame.showLobby();  // สร้างเมธอด showLobby ใน GameWithLobby เพื่อแสดงล็อบบี้
             }
         }
